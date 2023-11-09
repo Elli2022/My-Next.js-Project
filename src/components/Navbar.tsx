@@ -1,5 +1,7 @@
 // Exempel för components/Navbar.tsx
 import Link from "next/link";
+import React from "react";
+import { ModeToggle } from "./ModeToggle";
 
 export default function Navbar() {
   return (
