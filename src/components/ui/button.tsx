@@ -1,18 +1,17 @@
-// src/components/ui/button.tsx
-import React, { ReactNode } from "react";
+import React from "react";
 
 interface ButtonProps {
+  label: string;
   onClick: () => void;
-  children: ReactNode; // Lägger till stöd för children
 }
 
-const Button: React.FC<ButtonProps> = ({ children, onClick }) => {
+const Button: React.FC<ButtonProps> = ({ label, onClick }) => {
   return (
     <button
       onClick={onClick}
       className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
     >
-      {children}
+      {label}
     </button>
   );
 };
